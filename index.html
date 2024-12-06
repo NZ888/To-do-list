@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add Task Menu -->
+        <div data-dragble-item="" data-add-task-menu="" class="add-task">
+            <div class="close-task-menu">
+                <img data-close-task-menu="" src="assets/icons/delete.png" alt="Close task menu">
+            </div>
+            <form>
+                <div class="write-task-div">
+                    <input data-name-of-task="" required class="input-task-area" spellcheck="true" placeholder="Task name here..." type="text">
+                </div>
+                <div class="write-description-div">
+                    <textarea data-description-of-task="" required spellcheck="true" placeholder="Description" autocomplete="off"></textarea>
+                </div>
+            </form>            
+            <div class="footer-div-with-btn">
+                <div class="add-date-btn">
+                    <button data-open-calendar="" class="custom-date-button">
+                        <img class="date-icon" src="assets/icons/calendar.png" alt="Calendar icon">
+                        <span class="button-text">Date</span>
+                    </button>
+                    <div data-calendar-nemu="" class="data-calendar-nemu">
+                        <input data-date-of-task=""  class="input-date" type="date" name="" id="">
+                    </div>
+                </div> 
+                <div class="save-and-exit-btn">
+                    <div class="cancel-task-btn">
+                        <button data-clean-button="" class="custom-cancel-button">Clean</button>
+                    </div>
+                    <div class="add-task-btn">
+                        <button data-submit-button="" class="custom-add-button">Add</button>
+                    </div>
+                </div>                                                                
+            </div>
+        </div>
+        <div data-dragble-item="" data-read-task-menu="" class="read-task">
+            <div class="close-task-menu">
+                <img data-close-read-task-menu="" src="assets/icons/delete.png" alt="Close task menu">
+            </div>
+            <div class="read-task-title">
+                <h1 data-task-title="">Hello world</h1>
+            </div>
+            <div class="read-task-description">
+                <p data-task-description="">fklwkldkkdakldklwklwdkladklwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkldlwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkllwdaklwdlwkldwkldwkldwklwdkldwklakldwkdkwlwdkdwkwkl</p>
+            </div>
+            <div class="read-task-date">
+                <div data-icon-div-footer-img="" class="date-icon-div-footer">
+                    <img class="date-icon" src="assets/icons/calendar.png" alt="Calendar icon">
+                </div>
+                <div class="date-text-div-footer">
+                    <p data-task-date="">some TXT</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="buttons-container">
+                <div class="buttons">
+                    <!-- <button>Notifications</button> -->
+                    <button class="todo">Todo<span class="todo-counter">0</span></button>
+                </div>
+                <div class="add-image">
+                    <img data-open-task-menu="" src="assets/icons/add-button.png" alt="Add task">
+                </div>
+            </div>
+
+            <div class="tasks-container">
+                
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/ui.js"></script>
+    <script type="module" src="./js/storage.js"></script>
+</body>
+</html>
